@@ -1,0 +1,88 @@
+{
+    ["Variables"] = {
+        ["Flurry"] = {
+            [1] = "/cast Шквал"
+        },
+        ["lance"] = {
+            [1] = "/cast Ледяное копье"
+        },
+        ["Shield"] = {
+            [1] = "/cast Ледяная преграда"
+        }
+    },
+    ["Actions"] = {
+        [1] = {
+            [1] = "/cast [nocombat] Ледовый шип",
+            ["Disabled"] = false,
+            ["Type"] = "Action"
+        },
+        [2] = {
+            [1] = "/cast Зеркальное изображение",
+            ["Disabled"] = true,
+            ["Type"] = "Action"
+        },
+        [3] = {
+            [1] = {
+                [1] = "/cast Ледяной шар",
+                [2] = "~~lance~~",
+                ["Type"] = "Action"
+            },
+            [2] = {
+                [1] = "/cast Ледяная стрела",
+                ["Type"] = "Action"
+            },
+            [3] = {
+                [1] = "/castsequence [nochanneling] Шквал, Ледяное копье, Ледяное копье",
+                [2] = "~~lance~~",
+                ["Type"] = "Action"
+            },
+            [4] = {
+                [1] = "/cast Ледяная стрела",
+                [2] = "~~Shield~~",
+                ["Type"] = "Action"
+            },
+            [5] = {
+                [1] = "/cast Ледяное копье",
+                [2] = "~~Shield~~",
+                ["Type"] = "Action"
+            },
+            [6] = {
+                [1] = "~~Flurry~~",
+                [2] = "/cast Стылая кровь",
+                [3] = "~~lance~~",
+                ["Type"] = "Action"
+            },
+            ["Type"] = "Loop",
+            ["Repeat"] = 1,
+            ["StepFunction"] = "Sequential"
+        },
+        [4] = {
+            [1] = "/cast [pet,@cursor] 33395",
+            ["Type"] = "Action"
+        },
+        [5] = {
+            [1] = "/cast Кометная буря",
+            ["Type"] = "Action"
+        },
+        [6] = {
+            [1] = "/cast Ледовый шип",
+            ["Disabled"] = false,
+            ["Type"] = "Action"
+        },
+        [7] = {
+            [1] = "/cast Шквал",
+            ["Type"] = "Action"
+        }
+    },
+    ["InbuiltVariables"] = {
+        ["Ring2"] = false,
+        ["Head"] = false,
+        ["Combat"] = true,
+        ["Trinket2"] = false,
+        ["Neck"] = false,
+        ["Trinket1"] = false,
+        ["Belt"] = false,
+        ["Ring1"] = false
+    }
+}
+
